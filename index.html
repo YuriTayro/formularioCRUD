@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo/style.css">
+    <title>Formlário - Teste</title>
+</head>
+<body>
+    <section class="container">
+        <div class="cabecalho">
+            <h1>Formulário de Inscrição</h1>
+        </div>
+
+        <!--Form-->
+        <form id="form" class="form">
+            <div class="controle-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome.">
+                <span>Mensagem de erro...</span>
+            </div>
+
+            <div class="controle-form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="exemplo@exemplo.com">
+                <span>Mensagem de erro...</span>
+            </div>
+
+            <div class="controle-form">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="Digite seu senha">
+                <span>Mensagem de erro...</span>
+            </div>
+
+            <div class="controle-form">
+                <label for="passwordConfirmation">Confirmação da Senha:</label>
+                <input type="password" id="passwordConfirmation" placeholder="Digite sua senha novamente.">
+                <span>Mensagem de erro...</span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

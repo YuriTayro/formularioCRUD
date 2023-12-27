@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* Cores */
+    --cor-fundo: #0E273C;
+    --cor-form: #D5F2E3;
+    --cor-btn: #468C98;
+    --gradiente: #9CFFD9;
+
+    /* Fonte */
+    --font-padrao: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--cor-fundo);
+    font-family: var(--font-padrao);
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: var(--cor-form);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cabecalho {
+    background: linear-gradient(120deg, #468C98 5%, #9CFFD9 100%);
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.controle-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.form label {
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid;
+    outline: none;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+.form button {
+    margin-top: 20px;
+    background: var(--cor-btn);
+    padding: 8px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #fff;
+    color: var(--cor-btn);
+}
+
+span {
+    visibility: hidden;
+}
+
+
+/* Erro e sucesso */
+.controle-form.error input {
+    border-color: red;
+}
+
+.controle-form.success input {
+    border-color: rgb(51, 206, 51);
+}
+
+.controle-form.error span {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    visibility: visible;
+}
