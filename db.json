@@ -1,0 +1,10 @@
+{
+  "produtos": [
+    {
+      "nome": "ford",
+      "preco": "86000",
+      "descricao": "red",
+      "id": 1
+    }
+  ]
+}
